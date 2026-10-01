@@ -1,0 +1,52 @@
+:root {
+  --ink: #e9e4d8;
+  --muted: #9aa6b2;
+  --sea: #0f1820;
+  --lamp: #f2b45a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 70% 0%, #1e2b38 0%, var(--sea) 60%);
+  color: var(--ink);
+  font-family: "Fraunces", Georgia, serif;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+main { max-width: 960px; width: 100%; }
+figure { margin: 0; }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.8);
+}
+article {
+  max-width: 62ch;
+  margin: clamp(2rem, 5vw, 3.5rem) auto 0;
+}
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--lamp);
+}
+.lede {
+  margin: 0;
+  font-weight: 300;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.75;
+}
+.lede::first-letter {
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.85;
+  padding: 0.08em 0.12em 0 0;
+  font-weight: 600;
+  color: var(--lamp);
+}
